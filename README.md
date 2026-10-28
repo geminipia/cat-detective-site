@@ -4,8 +4,8 @@
 
 ## 게시 전에 꼭 바꿀 것
 `index.html`, `privacy.html` 에서 아래 두 문구를 실제 값으로 교체하세요.
-- `strophicgames` → 개발자(본인) 이름 또는 활동명
-- `strophicgames@gmail.com` → 공개해도 되는 문의 이메일 (공개되는 정보이므로 개인 메일 대신 전용 메일 권장)
+- `DEVELOPER_NAME_HERE` → 개발자(본인) 이름 또는 활동명
+- `CONTACT_EMAIL_HERE` → 공개해도 되는 문의 이메일 (공개되는 정보이므로 개인 메일 대신 전용 메일 권장)
 
 ## GitHub Pages 로 게시
 1. GitHub에서 **새 공개(public) 저장소**를 만든다 (예: `cat-detective-site`). 게임 소스 저장소와 분리하면 소스를 비공개로 둘 수 있다

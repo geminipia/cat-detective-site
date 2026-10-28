@@ -16,21 +16,27 @@
 <main class="wrap doc">
   <section data-l="ko">
     <h2 class="display" style="font-size:30px">개인정보처리방침</h2>
-    <p>시행일: 2026년 10월 25일 · 최종 수정일: 2026년 10월 25일</p>
+    <p>시행일: 2026년 10월 25일 · 최종 수정일: 2026년 10월 28일</p>
     <p>strophicgames(이하 "개발자")는 모바일 게임 <b>고양이 탐정 사무소</b>(이하 "앱")를 제공하며, 이용자의 개인정보를 소중히 다룹니다. 이 방침은 앱이 어떤 정보를 어떻게 다루는지 설명합니다.</p>
 
     <h2 class="display">1. 요약</h2>
     <ul>
-      <li>앱은 <b>회원가입이나 로그인이 없으며</b>, 이름·이메일·전화번호 등 개인 식별 정보를 개발자가 직접 수집하지 않습니다.</li>
-      <li>게임 진행 상황은 이용자의 <b>기기 안</b>에만 저장됩니다.</li>
+      <li>앱은 <b>로그인 없이도</b> 플레이할 수 있습니다. 이용자가 원할 때만 <b>구글 계정을 연결</b>해 게임 진행 상황을 클라우드에 백업할 수 있습니다.</li>
+      <li>구글 계정을 연결하지 않으면 게임 진행 상황은 이용자의 <b>기기 안</b>에만 저장됩니다.</li>
+      <li>구글 계정을 연결하면 <b>이메일 주소와 계정 고유 ID</b>가 로그인 확인에 사용되고, 게임 진행 상황이 <b>Google Firebase</b>에 저장됩니다. 설정에서 언제든 계정과 클라우드 데이터를 삭제할 수 있습니다.</li>
       <li>앱은 광고 제공을 위해 <b>Google AdMob</b>을 사용하며, 이때 광고 관련 정보가 Google에 의해 수집될 수 있습니다.</li>
       <li>앱은 <b>만 13세 이상</b>을 대상으로 합니다.</li>
     </ul>
 
     <h2 class="display">2. 기기에 저장되는 정보</h2>
-    <p>앱은 다음 정보를 이용자의 기기에 저장하며, 개발자의 서버로 전송하지 않습니다.</p>
+    <p>앱은 다음 정보를 이용자의 기기에 저장합니다. 구글 계정을 연결하지 않으면 이 정보는 어디로도 전송되지 않습니다.</p>
     <ul><li>게임 진행 기록(클리어한 스테이지, 별 개수, 최단 기록)</li><li>보유한 아이템과 받은 보상 기록</li><li>설정 값(언어, 효과음·배경음·진동 여부)</li></ul>
-    <p>이 정보는 앱을 삭제하거나 앱 데이터를 지우면 함께 삭제됩니다.</p>
+    <p>이 정보는 앱을 삭제하거나 앱 데이터를 지우면 기기에서 함께 삭제됩니다.</p>
+
+    <h2 class="display">2-1. 구글 계정 연결과 클라우드 저장 (선택)</h2>
+    <p>이용자가 설정에서 <b>구글 계정 연결</b>을 선택하면 Google 로그인(Firebase Authentication)을 사용합니다. 이때 다음 정보가 처리됩니다.</p>
+    <ul><li>구글 계정의 이메일 주소와 계정 고유 ID(로그인 확인과 데이터 구분 목적)</li><li>위 2번의 게임 진행 기록, 아이템, 설정 값(기기 변경 시 복원과 여러 기기 동기화 목적)</li></ul>
+    <p>이 정보는 Google이 제공하는 Firebase(Cloud Firestore)에 저장되며, 계정 본인만 읽고 쓸 수 있도록 접근이 제한됩니다. 광고, 분석 목적으로 사용하거나 제3자에게 판매하지 않습니다. 이용자는 앱의 <b>설정 &gt; 계정과 클라우드 데이터 &gt; 삭제</b>에서 연결과 저장된 데이터를 직접 삭제할 수 있습니다.</p>
 
     <h2 class="display">3. 광고 및 제3자 서비스 (Google AdMob)</h2>
     <p>앱은 보상형 광고 등을 표시하기 위해 Google AdMob을 사용합니다. AdMob은 광고 제공, 성과 측정, 부정 사용 방지를 위해 다음과 같은 정보를 자동으로 수집할 수 있습니다.</p>
@@ -47,10 +53,10 @@
     <p>앱은 만 13세 미만을 대상으로 하지 않으며, 만 13세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다. 만 13세 미만 아동의 정보가 수집된 사실을 알게 되면 해당 정보를 삭제하기 위해 조치하겠습니다.</p>
 
     <h2 class="display">6. 보관 및 삭제</h2>
-    <p>개발자는 이용자의 개인정보를 서버에 보관하지 않습니다. 기기에 저장된 정보는 앱 삭제 또는 앱 데이터 삭제로 제거할 수 있습니다. 광고 관련 정보의 보관과 삭제는 Google의 정책을 따릅니다.</p>
+    <p>구글 계정을 연결하지 않은 이용자의 정보는 개발자의 서버에 보관되지 않습니다. 기기에 저장된 정보는 앱 삭제 또는 앱 데이터 삭제로 제거할 수 있습니다. 구글 계정을 연결한 경우 클라우드 데이터는 앱의 <b>계정과 클라우드 데이터 삭제</b> 기능으로 즉시 삭제할 수 있고, 삭제 요청은 아래 문의처로도 보낼 수 있습니다. 광고 관련 정보의 보관과 삭제는 Google의 정책을 따릅니다.</p>
 
     <h2 class="display">7. 보안</h2>
-    <p>앱은 필요한 최소한의 정보만 기기에 저장하고, 개발자가 이용자 정보를 수집하는 별도 서버를 운영하지 않습니다.</p>
+    <p>앱은 필요한 최소한의 정보만 다룹니다. 클라우드 데이터는 Google Firebase의 보안 규칙으로 본인 계정에서만 접근할 수 있고, 전송 구간은 암호화됩니다. 개발자가 별도의 서버를 운영하지 않습니다.</p>
 
     <h2 class="display">8. 방침의 변경</h2>
     <p>이 방침은 앱의 기능이나 법령이 바뀌면 수정될 수 있으며, 수정 시 이 페이지에 최종 수정일과 함께 게시합니다.</p>
@@ -62,21 +68,27 @@
 
   <section data-l="en">
     <h2 class="display" style="font-size:30px">Privacy Policy</h2>
-    <p>Effective date: October 25, 2026 · Last updated: October 25, 2026</p>
+    <p>Effective date: October 25, 2026 · Last updated: October 28, 2026</p>
     <p>strophicgames ("the Developer") provides the mobile game <b>Cat Detective Agency</b> ("the App") and cares about your privacy. This policy explains what information the App handles and how.</p>
 
     <h2 class="display">1. Summary</h2>
     <ul>
-      <li>The App has <b>no sign-up or login</b>, and the Developer does not directly collect names, email addresses, phone numbers or other personal identifiers.</li>
-      <li>Your game progress is stored <b>only on your device</b>.</li>
+      <li>You can play the App <b>without signing in</b>. Only if you choose to, you can <b>connect a Google account</b> to back up your progress in the cloud.</li>
+      <li>If you do not connect an account, your game progress is stored <b>only on your device</b>.</li>
+      <li>If you connect a Google account, your <b>email address and account ID</b> are used to verify the sign-in and your progress is stored in <b>Google Firebase</b>. You can delete the account link and the cloud data at any time in Settings.</li>
       <li>The App uses <b>Google AdMob</b> to show ads, and Google may collect advertising-related information for that purpose.</li>
       <li>The App is intended for users <b>aged 13 and older</b>.</li>
     </ul>
 
     <h2 class="display">2. Information stored on your device</h2>
-    <p>The App stores the following on your device and does not send it to the Developer's servers.</p>
+    <p>The App stores the following on your device. If you do not connect a Google account, this information is not sent anywhere.</p>
     <ul><li>Game progress (cleared stages, stars, best times)</li><li>Items you own and rewards you have collected</li><li>Settings (language, sound effects, music, vibration)</li></ul>
-    <p>This information is removed when you uninstall the App or clear its data.</p>
+    <p>This information is removed from the device when you uninstall the App or clear its data.</p>
+
+    <h2 class="display">2-1. Google account and cloud save (optional)</h2>
+    <p>If you choose <b>Connect Google account</b> in Settings, the App uses Google Sign-In (Firebase Authentication). The following is processed:</p>
+    <ul><li>The email address and unique ID of your Google account (to verify sign-in and keep your data separate)</li><li>The game progress, items and settings listed in section 2 (to restore on a new device and sync between devices)</li></ul>
+    <p>This information is stored in Firebase (Cloud Firestore) provided by Google, and access is restricted so that only your own account can read and write it. It is not used for advertising or analytics and is not sold to third parties. You can delete the link and your stored data yourself in the App under <b>Settings &gt; Account &amp; cloud data &gt; Delete</b>.</p>
 
     <h2 class="display">3. Ads and third-party services (Google AdMob)</h2>
     <p>The App uses Google AdMob to display ads such as rewarded ads. For ad delivery, measurement and fraud prevention, AdMob may automatically collect:</p>
@@ -93,10 +105,10 @@
     <p>The App is not directed to children under 13 and does not knowingly collect personal information from them. If we learn that information from a child under 13 has been collected, we will take steps to delete it.</p>
 
     <h2 class="display">6. Retention and deletion</h2>
-    <p>The Developer does not keep your personal information on any server. Data stored on your device can be removed by uninstalling the App or clearing its data. Retention of ad-related information follows Google's policies.</p>
+    <p>For users who do not connect a Google account, no personal information is kept on the Developer's servers. Data stored on your device can be removed by uninstalling the App or clearing its data. If you connected a Google account, you can delete your cloud data right away with the App's <b>Account &amp; cloud data</b> delete function, or send a deletion request to the contact below. Retention of ad-related information follows Google's policies.</p>
 
     <h2 class="display">7. Security</h2>
-    <p>The App stores only the minimum information needed on your device, and the Developer does not operate a server that collects user information.</p>
+    <p>The App handles only the minimum information needed. Cloud data can be accessed only from your own account through Firebase security rules, and it is encrypted in transit. The Developer does not operate any separate server.</p>
 
     <h2 class="display">8. Changes to this policy</h2>
     <p>This policy may change when the App or the law changes. Updates are posted on this page together with the last-updated date.</p>
