@@ -50,3 +50,5 @@ footer.site a{color:var(--sub)}
 .crumb{font-size:.9rem;margin:0 0 6px} .crumb a{color:var(--sub);text-decoration:none} .crumb a:hover{color:var(--brand)}
 @media (max-width:760px){.hero .in{grid-template-columns:1fr}.hero .art{transform:none;max-width:320px;margin:0 auto}.top nav{gap:12px}}
 .game h3{display:flex;align-items:center;gap:10px}.game h3 .gi{width:36px;height:36px;border-radius:10px;border:2px solid #5b3a29;flex:none}
+
+.hero .art img{width:100%;height:auto;object-fit:cover}
