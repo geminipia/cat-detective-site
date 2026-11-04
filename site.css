@@ -63,3 +63,4 @@ footer.site a{color:var(--sub)}
 .slider .dots button{width:12px;height:12px;border-radius:50%;border:2px solid #fff;background:transparent;padding:0;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.5)}
 .slider .dots button.on{background:#fff}
 @media (prefers-reduced-motion:reduce){.slider .slide{transition:none}}
+.slider figcaption{max-width:calc(100% - 24px)}
