@@ -20,7 +20,12 @@
     <p>손으로 그린 듯한 따뜻한 그림과, 가볍게 즐기는 게임. 고양이 셰프와 고양이 탐정이 기다리고 있어요.</p>
     <div class="btns"><a class="btn main" href="#games">게임 보기</a><a class="btn" href="inky-bakery/privacy.html">개인정보처리방침</a></div>
   </div>
-  <div class="art"><img src="images/inky-hero.webp" alt="빵집 앞에서 쟁반을 든 검은 고양이 셰프 먹물" width="720" height="872"></div>
+  <div class="art slider" id="heroSlider" aria-roledescription="carousel" aria-label="게임 소개">
+    <figure class="slide on"><img src="images/detective-hero.webp" alt="돋보기를 든 검은 고양이 탐정과 뚱냥이 조수" width="720" height="872"><figcaption>고양이 탐정 사무소</figcaption></figure>
+    <figure class="slide"><img src="images/inky-hero.webp" alt="빵집 앞에서 쟁반을 든 검은 고양이 셰프 먹물" width="720" height="872" loading="lazy"><figcaption>고양이 베이커리 클리커</figcaption></figure>
+    <figure class="slide"><img src="images/catapult-hero.webp" alt="복셀 투석기가 적 요새를 향해 조준하는 Catapult Idle 게임 화면" width="720" height="872" loading="lazy"><figcaption>Catapult Idle</figcaption></figure>
+    <div class="dots" role="tablist" aria-label="슬라이드 선택"><button class="on" aria-label="고양이 탐정 사무소"></button><button aria-label="고양이 베이커리 클리커"></button><button aria-label="Catapult Idle"></button></div>
+  </div>
 </div></section>
 
 <section class="sec" id="games">
@@ -63,5 +68,21 @@
   <div><h4>🔒 최소한의 정보만</h4><p>필요한 정보만 다루고, 앱 안에서 언제든 계정과 데이터를 삭제할 수 있어요.</p></div>
 </div></section>
 <footer class="site"><span>© strophicgames</span><span>문의 <a href="mailto:strophicgames@gmail.com">strophicgames@gmail.com</a></span></footer>
+<script>
+(function () {
+  var box = document.getElementById('heroSlider'); if (!box) return;
+  var slides = box.querySelectorAll('.slide'), dots = box.querySelectorAll('.dots button'), i = 0, timer = null;
+  function show(n) {
+    i = (n + slides.length) % slides.length;
+    slides.forEach(function (s, k) { s.classList.toggle('on', k === i); });
+    dots.forEach(function (d, k) { d.classList.toggle('on', k === i); });
+  }
+  function start() { stop(); if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return; timer = setInterval(function () { show(i + 1); }, 4500); }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+  dots.forEach(function (d, k) { d.addEventListener('click', function () { show(k); start(); }); });
+  box.addEventListener('mouseenter', stop); box.addEventListener('mouseleave', start);
+  start();
+})();
+</script>
 </body>
 </html>
