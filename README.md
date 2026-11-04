@@ -8,6 +8,7 @@ GitHub Pages 로 올리는 정적 사이트입니다. 빌드 과정이 없습니
 | `/inky-bakery/privacy.html` | 고양이 베이커리 클리커 개인정보처리방침 |
 | `/inky-bakery/delete-data.html` | 고양이 베이커리 클리커 계정·데이터 삭제 안내 (Play Console 의 "데이터 삭제 URL") |
 | `/cat-detective/privacy.html`, `/cat-detective/delete-data.html` | 고양이 탐정 사무소 |
+| `/catapult-idle/privacy.html`, `/catapult-idle/delete-data.html` | Catapult Idle (Play Console 의 개인정보처리방침 URL / 데이터 삭제 URL) |
 | `/privacy.html` | 예전 주소 유지용(고양이 탐정 사무소 방침과 같은 내용) |
 
 ## 올리는 방법
